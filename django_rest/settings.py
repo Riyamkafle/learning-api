@@ -58,7 +58,7 @@ ROOT_URLCONF = 'django_rest.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [BASE_DIR/'templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -112,6 +112,10 @@ CORS_ALLOWED_ORIGINS = [
     "http://localhost:5500",
     "http://192.168.1.67:5500",
     "http://127.0.0.1:9000",
+    "http://127.0.0.1:5500",
+    "http://127.0.0.1:8000",
+    
+
 ]
 # Internationalization
 # https://docs.djangoproject.com/en/4.2/topics/i18n/

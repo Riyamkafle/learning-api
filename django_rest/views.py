@@ -4,8 +4,12 @@ from rest_framework.decorators import api_view
 from rest_framework.views import APIView
 from recipe.models import Recipe
 from recipe.serializers import RecipeSerializer
+from django.shortcuts import render
 
 
+
+def display_view (request):
+    return render(request,'react.html')
 
 @api_view(['GET','POST'])
 def index(request):
